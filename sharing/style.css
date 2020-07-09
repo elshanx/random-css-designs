@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #287ae7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Muli', sans-serif;
+}
+
+.container {
+  width: 60rem;
+  height: 40rem;
+  box-shadow: -12px 31px 51px rgba(40, 122, 231, 0.42);
+  background-color: #eaf2fd;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.container__heading {
+  width: 28rem;
+  height: 2.3rem;
+  color: #152766;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  text-transform: uppercase;
+  margin-top: 2.2rem;
+}
+
+.container__social {
+  width: 50rem;
+  height: 10rem;
+  background-color: #ffffff;
+  display: flex;
+  box-shadow: -5px 12px 27px rgba(40, 122, 231, 0.08);
+}
+
+.container__social--item {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgba(40, 122, 231, 0.08) 1px solid;
+}
+
+.container__share--text {
+  box-shadow: -12px 31px 51px rgba(40, 122, 231, 0.42);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.container__share--URL {
+  width: 50rem;
+  height: 4.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.container__btn {
+  margin-bottom: 1.5rem;
+}
+
+.container__btn--text {
+  text-decoration: none;
+  width: 100px;
+  height: 15px;
+  color: #287ae7;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.container__share--link {
+  margin-left: 1.5rem;
+}
+
+.container__cancel {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+}
