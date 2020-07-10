@@ -13,6 +13,7 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
   box-sizing: border-box;
   height: 100vh;
   width: 100vw;
@@ -26,7 +27,7 @@ body {
 .container {
   width: 60rem;
   height: 40rem;
-  box-shadow: -12px 31px 51px rgba(40, 122, 231, 0.42);
+  box-shadow: -1.2rem 3.1rem 5.1rem rgba(40, 122, 231, 0.42);
   background-color: #eaf2fd;
   display: flex;
   justify-content: space-around;
@@ -47,11 +48,10 @@ body {
 }
 
 .container__social {
-  width: 50rem;
   height: 10rem;
   background-color: #ffffff;
   display: flex;
-  box-shadow: -5px 12px 27px rgba(40, 122, 231, 0.08);
+  box-shadow: -0.5rem 1.2rem 2.7rem rgba(40, 122, 231, 0.08);
 }
 
 .container__social--item {
@@ -63,20 +63,38 @@ body {
   border: rgba(40, 122, 231, 0.08) 1px solid;
 }
 
+.facebook,
+.dribble,
+.twitter,
+.linkedin,
+.googleplus {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
 .container__share--text {
-  box-shadow: -12px 31px 51px rgba(40, 122, 231, 0.42);
+  box-shadow: -1.2rem 3.1rem 5.1rem rgba(40, 122, 231, 0.42);
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.4rem;
 }
 
-.container__share--URL {
+.container__share {
   width: 50rem;
+}
+
+.container__share--URL {
+  width: 100%;
   height: 4.5rem;
   background-color: #fff;
   display: flex;
   align-items: center;
   padding: 0 1rem;
+}
+
+.paperclip {
+  width: 2rem;
+  height: 2rem;
 }
 
 .container__btn {
@@ -85,16 +103,12 @@ body {
 
 .container__btn--text {
   text-decoration: none;
-  width: 100px;
-  height: 15px;
+  width: 10rem;
+  height: 1.5rem;
   color: #287ae7;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 21px;
-}
-
-.link {
-  cursor: pointer;
+  line-height: 2.1rem;
 }
 
 .container__share--link {
@@ -105,4 +119,55 @@ body {
   position: absolute;
   right: 3rem;
   top: 3rem;
+}
+
+.link {
+  cursor: pointer;
+}
+
+@media (max-width: 616px) {
+  .container {
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .container__social {
+    width: 40rem;
+  }
+
+  .container__share {
+    width: 40rem;
+  }
+
+  .container__share--link {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 482px) {
+  .container__social {
+    width: 30rem;
+  }
+
+  .container__share {
+    width: 30rem;
+  }
+
+  .container__share--link {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 362px) {
+  .container__social {
+    width: 25rem;
+  }
+
+  .container__share {
+    width: 25rem;
+  }
+
+  .container__share--link {
+    font-size: 0.7rem;
+  }
 }
