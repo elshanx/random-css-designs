@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --heading-color1: #242e4c;
+  --border-color1: #f85e99;
+  --border-color2: #d788ff;
+  --border-color3: #ffa378;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+    -45deg,
+    #00bbe1 0%,
+    #03c1db 15%,
+    #0dd5c4 100%
+  );
+  color: var(--heading-color1);
+
+  font-family: "Lato", sans-serif;
+  line-height: 2.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 35%;
+  height: 50%;
+
+  padding: 3.5rem 4.5rem;
+
+  box-shadow: 0 3.3rem 5.1rem rgba(0, 96, 167, 0.35);
+  border-radius: 1.5rem;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container__header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container__header--heading {
+  margin: 3rem 0;
+}
+
+.skills-h1 {
+  font-size: 2.6rem;
+}
+
+.container__header--btn {
+  width: 11.9rem;
+  height: 3.9rem;
+}
+
+.view-btn {
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid #e6ecff;
+  background-color: #fff;
+  opacity: 0.6;
+}
+
+.container__skills--item {
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  height: 10rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container__skills--item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.container__skills--heading {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.container__skills--courses {
+  opacity: 0.7;
+  color: var(--heading-color1);
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.item1 {
+  border-left: var(--border-color1) 0.5rem solid;
+}
+
+.item2 {
+  border-left: var(--border-color2) 0.5rem solid;
+}
+
+.item3 {
+  border-left: var(--border-color3) 0.5rem solid;
+}
