@@ -33,103 +33,87 @@ body {
 
 .container {
   width: 60rem;
+  padding: 50px 30px;
   box-shadow: 0 49px 71px -30px rgba(27, 27, 81, 0.23);
   border-radius: 1rem;
   background-color: var(--bgc-primary);
   display: flex;
   flex-flow: column wrap;
-  justify-content: space-around;
   align-items: center;
 }
 
 .heading {
   width: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
-.heading__h1 {
+.title {
   color: var(--bg-text1);
   font-size: 2.2rem;
-  margin-top: 5rem;
   margin-bottom: 1.5rem;
 }
 
-.heading__text {
+.description {
   color: var(--bg-text1);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.7rem;
-  margin-bottom: 5rem;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .oauth {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.socials {
+.social {
   width: 30rem;
-  height: 7rem;
+  padding: 20px;
   border: 1px solid #d2dae6;
   border-radius: 0.5rem;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   background-color: var(--bgc-primary);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
 }
 
-.socials:not(:last-of-type) {
+.social:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 
-.socials:last-of-type {
-  margin-bottom: 5rem;
+.social:hover {
+  border-color: rgb(11, 11, 206);
 }
 
-.socials__btn {
-  width: 80%;
-  color: var(--bg-text1);
-  text-decoration: none;
-  font-size: 1.6rem;
-  margin-left: 2rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.social__icon {
+  margin-right: 2rem;
 }
 
-.btn {
-  color: var(--bg-text1);
-}
-
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-  font-size: 1.6rem;
-}
-
-.socials__icon {
-  margin-left: 2rem;
+.social__text {
+  font-size: 15px;
 }
 
 .updates {
-  margin-bottom: 5rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 9rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.products__text {
+.checkbox {
+  width: 25px;
+  height: 25px;
+}
+
+.updates__text {
   color: var(--bg-text1);
   font-size: 1.4rem;
+  padding-left: 10px;
 }
 
 .signin__btn {
+  text-decoration: none;
   color: #1997f0;
 }
