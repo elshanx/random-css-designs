@@ -9,61 +9,45 @@
   <body>
     <main class="container">
       <div class="heading">
-        <h1 class="heading__h1">Sign Up</h1>
-        <p class="heading__text">
+        <h1 class="title">Sign Up</h1>
+        <p class="description">
           Create an account to unlock all the benefits to easily save, like or
           submit your favorite content.
         </p>
       </div>
       <div class="oauth">
-        <button class="socials">
-          <div class="socials__icon">
+        <div class="social">
             <img
-              class="socials__icon--google"
+              class="social__icon"
               src="./svg/google.svg"
               alt="google"
             />
-          </div>
-          <div class="socials__btn">
-            <a href="#" class="btn">Sign up with Google</a>
-          </div>
-        </button>
-        <button class="socials">
-          <div class="socials__icon">
-            <img
-              class="socials__icon--fb"
-              src="./svg/facebook.svg"
-              alt="facebook"
-            />
-          </div>
-          <div class="socials__btn">
-            <a href="#" class="btn">Sign up with Facebook</a>
-          </div>
-        </button>
-        <button class="socials">
-          <div class="socials__icon">
-            <img
-              class="socials__icon--twitter"
-              src="./svg/twitter.svg"
-              alt="twitter"
-            />
-          </div>
-          <div class="socials__btn">
-            <a href="#" class="btn">Sign up with Twitter</a>
-          </div>
-        </button>
+          <span class="social__text">Sign up with Google</span>
+        </div>
+        <div class="social">
+          <img
+            class="social__icon"
+            src="./svg/facebook.svg"
+            alt="facebook"
+          />
+          <span class="social__text">Sign up with Facebook</span>
+        </div>
+        <div class="social">
+          <img
+            class="social__icon"
+            src="./svg/twitter.svg"
+            alt="twitter"
+          />
+          <span class="social__text">Sign up with Twitter</span>
+        </div>
       </div>
       <div class="updates">
-        <div class="checkbox">
-          <input class="checkbox__input" type="checkbox" />
-          <span class="products__text"
-            >I’m not interested in update about products and services.</span
-          >
-        </div>
-        <div class="signin">
-          <a href="" class="signin__btn">Sign In</a>
-        </div>
+        <input id="check" class="checkbox" type="checkbox" />
+        <label for="check" class="updates__text"
+          >I’m not interested in update about products and services.</label
+        >
       </div>
+      <a href="" class="signin__btn">Sign In</a>
     </main>
   </body>
 </html>
