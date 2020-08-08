@@ -1,0 +1,17 @@
+body {
+  background-color: #fafafa;
+}
+
+button {
+  color: #1d343e;
+  transition: 0.5s opacity;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+input {
+  background-color: #b9e3c6;
+  color: #1d343e;
+}

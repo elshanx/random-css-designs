@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy to clipboard</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <div>
+      <input
+        id="text"
+        type="text"
+        class="h-10 rounded mr-4 w-64 outline-none px-4 cursor-not-allowed"
+        value="https://example.com"
+        readonly
+      />
+      <button id="btn" class="text-xs font-bold uppercase">
+        <i class="fa fa-clone"></i> copy link
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
